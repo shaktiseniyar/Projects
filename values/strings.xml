@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">GreenAcresNursery</string>
+    <string-array name="plant_name">
+        <item>Aloe Vera</item>
+        <item>Krishna Tulsi</item>
+        <item>Piper Betel</item>
+        <item>Neem tree</item>
+        <item>Red sandalwood</item>
+        <item>Murraya koenigii</item>
+        <item>Lemon plant</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>₹199</item>
+        <item>₹249</item>
+        <item>₹249</item>
+        <item>₹349</item>
+        <item>₹349</item>
+        <item>₹349</item>
+        <item>₹349</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Aloe vera, Ghrita-kumari is the famous medicinal plant with ornamental and cultural beliefs. Aloe vera belongs to the Asphodelaceae family. Aloe vera also used for decorative purposes and grows successfully indoors and outdoor.</item>
+        <item>Krishna-tulsi is part of routine worship and has a scientific background as the plants possess antimicrobial and antiviral properties and purify the air. Krishna tulsi belongs to the Lamiaceae family.
+            Krishna Tulsi has traditional as well as medicinal importance.
+            Krishna tulsi tastes good and provides gentle stimulation to body, mind and spirit.</item>
+        <item>Enhance the beauty of your outdoor spaces by an excellent dense green Betel vine plant. Piper betel is a Woody climber in Piperaceae family with adventitious roots at swollen nodes.Leaves are simple heart shaped, alternate with spicy taste.Inflorescence is axillary with white uni sexual flower.</item>
+        <item>Neem tree(The Miracle Tree) has been widely planted as a shade tree and apart from various health benefits it makes a stunning outdoor garden foliage plant.It is a tall evergreen perennial tree with the small bright green leaves. It is up to 30 m tall. It blossoms with the small white flower It has a straight trunk. Its bark is hard rough and scaly, fissured even in small trees.</item>
+        <item>Red sandalwood is a large evergreen tree, one of the finest perfumery materials since ages.Sandalwood (Santalum album) is the evergreen tree source of world famous Indian sandalwood oil, which is extensively used in the perfumery industry. Both wood and oil are used in perfumes and in medicine.</item>
+        <item>Murraya koenigii is a most attractive, small evergreen tree with wonderfully sweet, curry-pungent foliage. Murraya koenigii well known for their aromatic and distinctive flavour and medicinal properties. Its green elongated leaves are glossy, aromatic and beautiful.  They are best used fresh in cooking (dried leaves may be used but have significantly diminished flavor).</item>
+        <item>Growing Lemon plant is an easy way to add a tropical flair to your garden. When you know its unique health benefits, and how to care for Lemon plants, you will be rewarded with many years of lovely fruit.</item>
+    </string-array>
+
+    <string-array name="Sunlight">
+        <item>Keep the plant in morning sunlight for 3 to 6 hour
+Protect the plant from direct harsh sunlight as it can cause damage to the foliage.</item>
+        <item>Keep the plant outdoor in natural bright light.
+Protect the plant from direct harsh sunlight as it can cause damage to the foliage.</item>
+        <item>At least 3-6 hours of preferably morning sunlight a day is ideal for plant to grow well and natural indirect bright light for the rest of the day.</item>
+        <item>More than 6 hours of preferably morning sunlight a day is ideal for plant to grow well and natural indirect bright light for the rest of the day.</item>
+        <item>Full Sun</item>
+        <item>Keep the plant outdoor with bright natural light.
+  Initially (Seedling stage) protect the curry plant from direct harsh sunlight as it can cause damage to the foliage.</item>
+        <item>Morning sunlight of more than 6 hours a day is ideal for flowering and fruit development.
+ plant. </item>
+    </string-array>
+
+    <string-array name="Watering">
+        <item>Poke your finger/plain small stick into the soil to check the moisture.
+ Water when top soil (3-4 inches) feels dry to touch.
+ Water thoroughly in the summer and reduce watering in winter and rainy season.</item>
+        <item>Poke your finger/plain small stick into the soil to check the moisture.
+Water when top soil (3-4 inches) feels dry to touch.
+Water thoroughly in the summer and reduce watering in winter and rainy season. </item>
+        <item>Before water poke your finger/plain small stick into the soil to check the moisture.
+  Water when top soil (1-2 inches) feels dry to touch.
+ Water thoroughly in the summer and reduce watering in winter and rainy season.</item>
+        <item>Before water poke your finger/plain small stick into the soil to check the moisture.
+  Water when top soil (1-2 inches) feels dry to touch.
+Water thoroughly in the summer and reduce watering in winter and rainy season.</item>
+        <item>Medium</item>
+        <item>Water the plant when the topsoil (1-2 inch) in pot feels dry to touch.
+  Do not overwater the plant.
+ Water thoroughly in the summer and reduce watering in winter and rainy season.</item>
+        <item>Poke your finger/plain small stick into the soil to check the moisture.
+  Apply 4 cup (approx.200ml) of water when the top soil (1-2 inch) in the pot feels dry to touch.
+  Do not overwater the plant.
+ As a rule of thumb, water the plants thoroughly in summer and reduce watering in winter and rainy season. Water should be applied preferably in the morning or evening.</item>
+    </string-array>
+
+</resources>
