@@ -1,33 +1,45 @@
 package com.example.greenacresnursery;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class CartActivity extends AppCompatActivity {
-    ImageView imageView3;
-    TextView textView15,textView16,textView17;
+    RecyclerView recview;
+    TextView rateview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+        getSupportActionBar().hide();
 
-        int Image=getIntent().getIntExtra("Image",0);
-        String Name=getIntent().getStringExtra("Name");
-        String Quantity=getIntent().getStringExtra("Quantity");
-        String Price=getIntent().getStringExtra("Price");
+        rateview=findViewById(R.id.rateview);
+        getroomdata();
+    }
 
-        imageView3=findViewById(R.id.imageView3);
-        textView15=findViewById(R.id.textView15);
-        textView16=findViewById(R.id.textView16);
-        textView17=findViewById(R.id.textView17);
+    private void getroomdata() {
+        AppDatabase db= Room.databaseBuilder(getApplicationContext(),AppDatabase.class,"cart_database").allowMainThreadQueries().build();
+        ProductDao productDao =db.ProductDao();
 
-        imageView3.setImageResource(Image);
-        textView15.setText(Name);
-        textView16.setText(Quantity);
-        textView17.setText(Price);
+        recview=findViewById(R.id.recview);
+        recview.setLayoutManager(new LinearLayoutManager(this));
 
+        List<Product> products=productDao.getallproduct();
+
+        CartAdapter adapter=new CartAdapter(products, rateview);
+        recview.setAdapter(adapter);
+
+        int sum=0,i;
+        for(i=0;i< products.size();i++)
+            sum=sum+(products.get(i).getPrice()*products.get(i).getQnt());
+
+        rateview.setText("Total Amount : INR "+sum);
     }
 }

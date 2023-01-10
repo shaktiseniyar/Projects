@@ -12,6 +12,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements RecyclerViewInterface{
 
     ArrayList<PlantsModel> plantsModel=new ArrayList<>();
+    int[] id={1,2,3,4,5,6,7};
     int[] images={R.drawable.pic1,R.drawable.pic2,R.drawable.pic3,R.drawable.pic4,R.drawable.pic5,R.drawable.pic6,R.drawable.pic7};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,10 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewInter
         String[] sunlight=getResources().getStringArray(R.array.Sunlight);
         String[] watering=getResources().getStringArray(R.array.Watering);
 
+
         for(int i=0;i<plantNames.length;i++){
             plantsModel.add(new PlantsModel(plantNames[i],
-                    price[i],images[i],description[i],sunlight[i],watering[i]));
+                    price[i],images[i],description[i],sunlight[i],watering[i],id[i]));
         }
     }
 
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewInter
         intent.putExtra("WATERING",plantsModel.get(position).getWatering());
         intent.putExtra("PRICE",plantsModel.get(position).getPrice());
         intent.putExtra("NAME",plantsModel.get(position).getPlantName());
+        intent.putExtra("ID",plantsModel.get(position).getId());
 
         startActivity(intent);
     }
