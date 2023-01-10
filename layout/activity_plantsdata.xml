@@ -248,9 +248,9 @@
                     app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
+                    android:id="@+id/totalprice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/totalprice"
                     android:text="₹0"
                     android:textColor="@color/black"
                     android:textSize="20dp"
@@ -262,6 +262,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/secondCardView"
                     app:layout_constraintVertical_bias="0.4" />
 
+
                 <Button
                     android:id="@+id/addtocart"
                     android:layout_width="wrap_content"
@@ -270,10 +271,40 @@
                     android:text="Add to cart"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintHorizontal_bias="0.208"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvwater"
                     app:layout_constraintVertical_bias="1.0" />
+
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="172dp"
+                    android:layout_marginEnd="65dp"
+                    android:text="Check Cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/addtocart"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvwater"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/checkcart"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="30dp"-->
+                <!--                    android:text="Add to cart"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.498"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/addtocart"-->
+                <!--                    app:layout_constraintVertical_bias="1.0" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
