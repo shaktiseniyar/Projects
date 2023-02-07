@@ -1,14 +1,22 @@
-body{
-    background-color: antiquewhite;
+*{
+    margin: 0px;
+    padding: 0px;
 }
-
-/* .navbar{
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif0;
+    font-size: 20px;
+    color: white;
+}
+.navbar{
     background-color: greenyellow;
-} */
-/* ul{
+    padding: 20px;
+}
+.list-item{
     list-style: none;
     display: flex;
 }
-ul li a{
+.list-item li a{
+    margin:20px;
+    padding:10px;
     text-decoration: none;
-} */
+}
